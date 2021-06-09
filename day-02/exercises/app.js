@@ -74,5 +74,3 @@ console.log(typeof 10)
 // 4
 console.log(parseFloat('9.8'))
 console.log(parseInt('9.8'))
-
-// 6
