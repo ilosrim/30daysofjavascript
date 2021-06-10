@@ -89,9 +89,7 @@ switch (seasonMin) {
 
 // Level
 // 1
-let months; //prompt('Enter a moth: ').toLowerCase();
-months = 30;
-let month = months;
+let month = 'january'; //prompt('Enter a moth: ').toLowerCase();
 switch (month) {
     case 'januar':
         console.log(`${month} has 31 day`);
