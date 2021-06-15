@@ -85,8 +85,26 @@ for (let i = 0; i <= 100; i++){
 }
 
 // 10
-let c = ''
+let c = 0
 for (let i = 0; i <= 100; i++){
-    i++
+    c+=i
 }
-console.log(i)
+console.log(`The sum of all numbers from 0 to 100 is ${c}`)
+
+// 11
+// let d = 0
+// for (let i = 0; i <= 100; i++){
+//     d+=i
+//     if(i%2==2){
+//         return i
+//     }
+//     else{
+//         return i
+//     }
+// }
+// let f = 0
+// if (f%2==0){
+//     for(let i = 0; i<=100; i++){
+//         console.log(`The sum of all evens from 0 to 100 is ${f}`)
+//     }
+// }
