@@ -45,6 +45,7 @@ console.log(mixedDataTypes.length)
 
 const itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'];
 
+console.log(itCompanies.includes('o'));
 console.log(itCompanies);
 console.log(itCompanies.length);
 console.log(itCompanies.slice(0,1))
@@ -58,4 +59,22 @@ console.log(`${itCompanies.slice(0,6).join(', ')} and ${itCompanies.slice(6)} ar
 // console.log(tek)
 // let myName = ['Mirsolih', 'Johon'];
 
+let userInfo = 'Facebook';
 
+switch (userInfo.toLowerCase()) {
+    case 'facebook':
+    case 'google':
+    case 'microsoft':
+    case 'apple':
+    case 'ibm':
+    case 'oracle':
+    case 'amazon':
+        console.log(userInfo[0].toUpperCase()+userInfo.slice(1))
+        break;
+    default:
+        console.log('Not found')
+}
+console.log(itCompanies.sort())
+console.log(itCompanies.reverse())
+console.log(itCompanies.slice(0,3))
+console.log(itCompanies.slice(4))
