@@ -92,19 +92,18 @@ for (let i = 0; i <= 100; i++){
 console.log(`The sum of all numbers from 0 to 100 is ${c}`)
 
 // 11
-// let d = 0
-// for (let i = 0; i <= 100; i++){
-//     d+=i
-//     if(i%2==2){
-//         return i
-//     }
-//     else{
-//         return i
-//     }
-// }
-// let f = 0
-// if (f%2==0){
-//     for(let i = 0; i<=100; i++){
-//         console.log(`The sum of all evens from 0 to 100 is ${f}`)
-//     }
-// }
+let juft = 0
+let toq = 0
+for (let i = 0; i<=100; i++){
+    if(i%2==0){
+        juft+=i
+    }
+    if(i%2!=0){
+        toq+=i
+    }
+}
+console.log(`The sum of all evens from 0 to 100 is ${juft}. And the sum of all odds from 0 to 100 is ${toq}`)
+
+// 12
+const newArr = []
+console.log(newArr.push(juft, toq))
