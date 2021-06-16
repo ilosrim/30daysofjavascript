@@ -74,3 +74,14 @@ console.log(typeof 10)
 // 4
 console.log(parseFloat('9.8'))
 console.log(parseInt('9.8'))
+
+// 7
+console.log(Math.random()*100)
+
+// 8
+let randomNumber = Math.random();
+let randomBtn50 = randomNumber * 50;
+let randomBtn100 = randomNumber * 100;
+let randomFix1 = Math.floor(randomBtn50);
+let randomFix2 = Math.floor(randomBtn100)
+console.log(randomFix1, randomFix2)
