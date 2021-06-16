@@ -105,5 +105,5 @@ for (let i = 0; i<=100; i++){
 console.log(`The sum of all evens from 0 to 100 is ${juft}. And the sum of all odds from 0 to 100 is ${toq}`)
 
 // 12
-const newArr = []
-console.log(newArr.push(juft, toq))
+const newArr = [juft, toq]
+console.log(newArr)
