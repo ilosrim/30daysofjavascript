@@ -107,3 +107,47 @@ console.log(`The sum of all evens from 0 to 100 is ${juft}. And the sum of all o
 // 12
 const newArr = [juft, toq]
 console.log(newArr)
+
+// 13
+let randomNum = Math.random()
+for (let i = 0; i<=5; i++){
+    console.log(Math.floor(randomNum+=i))
+}
+
+// let nums = [1,8,5,6,65]
+// const random = Math.floor(Math.random(1,2,3,4,5,6))
+// console.log(nums[random])
+
+// 15
+function GeneratePassword(length){
+    let chartset = 'ABCDEFGKLMNOPQRSTUVWYXZabcdefgklmnopqrstuvwyxz0123456789@#$%_';
+
+    let password = '';
+
+    for(let i = 0; i < length; ++i){
+        let at = Math.floor(Math.random() * (chartset.length + 1));
+        password += chartset.charAt(at);
+    }
+    return password;
+}
+console.log(GeneratePassword(6))
+
+function randomNumber(numLength){
+    let ids = '123456abcd'
+    let passwd = ''
+    for(let i = 0; i<numLength; ++i){
+        let cp = Math.floor(Math.random()*(ids.length + 1))
+        passwd+=ids.charAt(cp)
+    }
+    return passwd
+}
+console.log(randomNumber(6))
+
+// random string npm package
+var randomstring = require("randomstring");
+
+const crypto = randomstring.generate({
+    length:16,
+    charset:'alphabetic'
+});
+console.log(crypto);
