@@ -148,6 +148,22 @@ var randomstring = require("randomstring");
 
 const crypto = randomstring.generate({
     length:16,
-    charset:'alphabetic'
+    charset:'numeric'
 });
 console.log(crypto);
+
+// generate
+    // options
+        // length - default=32
+        // charset: alphabet[a-z, A-Z]
+        //      numeric[0-9]
+        //      alphanumeric[0-9 a-z A-Z]
+        //      hex[0-9 a-f]
+        //      binary[0 1]
+        //      octal[0-7]
+        //      custom - any given characters
+        // capitalisation
+        //      lowercase
+        //      uppercase
+    // cb
+        // Optional. If provided uses async version of crypto.randombytes
