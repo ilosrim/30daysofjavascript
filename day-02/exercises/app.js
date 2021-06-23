@@ -1,3 +1,13 @@
+/* cheetsheat */
+
+// indexOf(string, position)
+// lastIndexOf(string, position)
+// search(string)
+// slice(start, end)
+    // substring() is similar to slice(). The difference is that substring() cannot accept negative indexes.
+// substring(start, end)
+// substr(start, length)
+
 /* Level 1 */
 // 1 - toUperCase(), toLowercase()
 let string = '30 Days Of JavaScript';
@@ -94,7 +104,7 @@ let love = 'Love is the best thing in this world. Some love found their love and
 console.log(love.match(/\blove\b/gi).length)
 
 // b
-const myCout = love.split(/\blove\b/gi).length-1
+const myCout = love.split(/\blove\b/gi)
 console.log(myCout)
 
 // c
@@ -116,3 +126,5 @@ console.log(sentence.replace(/[^a-zA-Z 0-9.]/g,""))
 let price = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let sum = price.match(/\d+/g).map(i=>Number(i)).reduce((a, b) => a + b, 0)
 console.log(sum)
+
+// console.log(price.match(/(he|from|month)/gi))
