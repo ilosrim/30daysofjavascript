@@ -108,11 +108,11 @@ const myCout = love.split(/\blove\b/gi)
 console.log(myCout)
 
 // c
-// let y = love.split(' ')
-// function checkAdult(y) {
-//  return y === 'love'
-// }
-// console.log(y.filter(checkAdult).length)
+let y = love.split(' ')
+function checkAdult(y) {
+ return y === 'love'
+}
+console.log(y.filter(checkAdult).length)
 
 // 2
 let because = 'You cannot end a sentence with because because because is a conjunction'
@@ -128,3 +128,4 @@ let sum = price.match(/\d+/g).map(i=>Number(i)).reduce((a, b) => a + b, 0)
 console.log(sum)
 
 // console.log(price.match(/(he|from|month)/gi))
+
