@@ -55,15 +55,14 @@ console.log(!(4==='4'));
 console.log(!('dragon'.length == 'python'.length));
 
 // 7 Date object
-// const now = new Date;
-// console.log(`Today is ${now.getFullYear()}`);
-// console.log(`Today is ${now.getMonth()}`);
-// console.log(`Today is ${now.getDay()}`);
-// console.log(`Today is ${now.getDate()}`);
-// console.log(`Today is ${now.getHours()}`);
-// console.log(`Today is ${now.getMinutes()}`);
-
 const now = new Date()
+console.log(`Today is ${now.getFullYear()}`);
+console.log(`Today is ${now.getMonth()}`);
+console.log(`Today is ${now.getDay()}`);
+console.log(`Today is ${now.getDate()}`);
+console.log(`Today is ${now.getHours()}`);
+console.log(`Today is ${now.getMinutes()}`);
+
 const year = now.getFullYear() // return year
 const month = now.getMonth() + 1 // return month(0 - 11)
 const date = now.getDate() // return date (1 - 31)
