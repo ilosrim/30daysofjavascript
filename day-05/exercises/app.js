@@ -78,3 +78,11 @@ console.log(itCompanies.sort())
 console.log(itCompanies.reverse())
 console.log(itCompanies.slice(0,3))
 console.log(itCompanies.slice(4))
+
+// 20
+itCompanies.shift()
+console.log(itCompanies);
+itCompanies.pop()
+console.log(itCompanies);
+itCompanies.splice()
+console.log(itCompanies);

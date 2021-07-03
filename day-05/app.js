@@ -140,6 +140,10 @@ console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
 console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
 console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
 
+// splice()
+const numbers = [1, 2, 3, 4, 5, 6];
+console.log(numbers.splice(3, 3, 7, 8, 9)) 
+
 // push()
 // syntax
 const arr  = ['item1', 'item2','item3']
@@ -148,7 +152,8 @@ arr.push('new item')
 console.log(arr)
 // ['item1', 'item2','item3','new item']
 
-// po()
+
+// pop()
 const numbers = [1, 2, 3, 4, 5]
 numbers.pop() // -> remove one item from the end
 console.log(numbers) // -> [1,2,3,4]
