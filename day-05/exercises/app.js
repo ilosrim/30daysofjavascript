@@ -86,3 +86,59 @@ itCompanies.pop()
 console.log(itCompanies);
 itCompanies.splice()
 console.log(itCompanies);
+
+// Level 2
+// 2
+let text = '%%%I love teaching and empowering people. I teach HTML, CSS, JS, React, Python.'
+let remPunc = text.replace(/[^a-zA-Z ]/g,"")
+let words = remPunc.split(' ')
+
+console.log(words.length)
+
+// 3
+let shoppingCart = ['Milk', 'Coffee', 'Tea', 'Honey']
+let forEachFunc = shoppingCart.map((value)=> value !== 'Meat' && shoppingCart.unshift('Meat'))
+
+
+//for(i in shoppingCart){
+//   if(i !== 'Meat' && i !== 'Sugar'){
+//     shoppingCart.unshift('Meat')
+//     shoppingCart.push('Sugar')
+//   }
+// }
+// shoppingCart.unshift('Meat')
+// shoppingCart.push('Sugar')
+// shoppingCart.splice(2,3)
+console.log(forEachFunc);
+
+let a = [1,2,3,4,5]
+let b = [3,4,5,6]
+let c = [...a, ...b]
+console.log(c);
+
+// let A = new Set(a)
+// let B = new Set(b)
+let C = new Set(c)
+console.log(C);
+
+let p = 5
+let q = 19
+let f = p < q && q - p || p > q && p-q
+console.log(f);
+
+let son = 7
+son % 2 === 0 ? console.log('Juft son') : console.log('Toq son')
+
+// forEach
+const items = ['item1', 'item2', 'item3']
+const copyItems = []
+
+// before
+for (let i = 0; i < items.length; i++) {
+  copyItems.push(items[i])
+}
+
+// after
+items.forEach(function(item){
+  copyItems.push(item)
+})
