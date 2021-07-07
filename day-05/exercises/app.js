@@ -4,14 +4,13 @@ const countries = [
     'Bolivia',
     'Canada',
     'Denmark',
-    'Ethiopia',
     'Finland',
     'Germany',
     'Hungary',
     'Ireland',
     'Japan',
     'Kenya'
-  ]
+]
   
   const webTechs = [
     'HTML',
@@ -142,3 +141,36 @@ for (let i = 0; i < items.length; i++) {
 items.forEach(function(item){
   copyItems.push(item)
 })
+
+// 4
+countries.includes('Ethiopia') ? console.log('ETHIOPIA') : countries.push('Ethiopia')
+// 6
+const frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+const backEnd = ['Node','Express', 'MongoDB']
+let fullStack = [...frontEnd, ...backEnd]
+
+console.log(fullStack)
+
+// Level 3
+// 1
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+
+let sortSt = ages.sort((a,b)=>a-b)
+
+let minSt = sortSt[0]
+
+let lastIn = sortSt.length - 1
+let maxSt = sortSt[lastIn]
+
+console.log(sortSt);
+console.log(minSt);
+console.log(maxSt);
+
+let sum = 0
+ages.forEach((value)=>{
+  sum+=value
+})
+console.log(sum/10);
+
+let maxMinMinus = maxSt - minSt
+console.log(maxMinMinus);
