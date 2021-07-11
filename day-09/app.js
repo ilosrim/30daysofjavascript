@@ -91,6 +91,7 @@ console.log(result) // 0
 const agee = ages.findIndex((age) => age < 20)
 console.log(age) // 5
 
+//sort()
 const users = [
   { name: 'Asabeneh', age: 150 },
   { name: 'Brook', age: 50 },
