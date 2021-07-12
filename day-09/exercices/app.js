@@ -81,3 +81,6 @@ console.log(nameLen);
 // 21
 const nameLand = countries.every(val => val == 'land')
 console.log(nameLand);
+
+const string = 'some 1 content 2 with 3 digi6ts';
+console.log(string.match(/\d+/g));
