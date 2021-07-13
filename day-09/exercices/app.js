@@ -10,7 +10,6 @@ const products = [
   { product: 'tea', price: '' },
 ]
 
-
 // Level 1
 // 3
 const eachFunc = countries.forEach((value)=>{
