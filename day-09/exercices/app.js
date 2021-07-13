@@ -10,6 +10,7 @@ const products = [
   { product: 'tea', price: '' },
 ]
 
+
 // Level 1
 // 3
 const eachFunc = countries.forEach((value)=>{
@@ -84,3 +85,109 @@ console.log(nameLand);
 
 const string = 'some 1 content 2 with 3 digi6ts';
 console.log(string.match(/\d+/g));
+
+// 23
+const country = countries.find(item => item.length > 6)
+console.log(country);
+
+// 24
+const countryIndex = countries.findIndex(item => item.length > 6)
+console.log(countryIndex);
+
+// 25
+const norweyIn = countries.findIndex(val => val.toLowerCase() === 'norway')
+console.log(norweyIn);
+
+// 26
+const rusIn = countries.findIndex(val => val.toLowerCase() === 'russia')
+console.log(rusIn);
+
+// Level 2
+// 1
+let counts = 0
+const totalPrice = products.filter(value => {
+  if(value.price) counts+=value.price
+})
+console.log(counts);
+
+// 2
+const finds = products.reduce((sum, val) => {
+  if(val.price) sum+=val.price
+  return sum
+},0)
+console.log(finds);
+
+// 3
+const landSearch = countries.filter(val => val.toLowerCase().endsWith('land'))
+console.log(landSearch);
+
+// 5
+const getFirstTenCountries = ['Finland', 'Sweden', 'Denmark', 'Norway', 'IceLand', 'Estonia', 'India', 'Canada', 'Australia', 'New Zeland', 'Argentina']
+const findLetter = getFirstTenCountries.filter(val => val.includes('A'))
+console.log(findLetter);
+
+// Level 3
+// 1
+const landName = [
+  {
+    country: 'USA',
+    capital: 'Washington',
+    population: 450_000_000
+  },
+  {
+    country: 'Canada',
+    capital: 'Ottawa',
+    population: 100_000_000
+  },
+  {
+    country: 'Brasilia',
+    capital: 'Brasilia',
+    population: 500_000_000
+  },
+  {
+    country: 'England',
+    capital: 'London',
+    population: 90_000_000
+  },
+  {
+    country: 'Germania',
+    capital: 'Berlin',
+    population: 950_000_000
+  },
+  {
+    country: 'Uzbekistan',
+    capital: 'Tashkent',
+    population: 34_000_000
+  },
+  {
+    country: 'South Krea',
+    capital: 'Seul',
+    population: 110_000_000
+  }
+]
+// sort by name, capital, population
+const sortName = landName.sort((a,b) => a.country.toLowerCase().localeCompare(b.country.toLowerCase()))
+console.log(sortName);
+
+const arr5 = [
+  {country: 'English',count:91},
+  {country: 'French',count:5},
+  {country: 'Arabic',count:25},
+  {country: 'Spanish',count:24},
+  {country:'Russian',count:30},
+  {country:'Portuguese', count:14},
+  {country:'Dutch',count:27},
+  {country:'German',count:7},
+  {country:'Chinese',count:10},
+  {country:'Swahili',count:15}
+]
+
+const blabla = arr5.sort((a,b) => b.count-a.count)
+console.log(blabla);
+
+function mostSpokenLanguages(countries, n){
+  countries.sort((a,b)=>{
+    return a.count - b.count
+  })
+}
+console.log(mostSpokenLanguages(arr5, 3));
