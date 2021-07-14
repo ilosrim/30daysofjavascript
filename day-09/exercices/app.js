@@ -168,6 +168,7 @@ const landName = [
 const sortName = landName.sort((a,b) => a.country.toLowerCase().localeCompare(b.country.toLowerCase()))
 console.log(sortName);
 
+// 2
 const arr5 = [
   {country: 'English',count:91},
   {country: 'French',count:5},
@@ -189,4 +190,35 @@ function mostSpokenLanguages(countries, n){
     return a.count - b.count
   })
 }
-console.log(mostSpokenLanguages(arr5, 3));
+// console.log(mostSpokenLanguages(arr5, 3));
+
+// 4
+const statistic = [
+  {
+    count: 25,
+    sum:  744,
+    min:  24,
+    max:  38,
+    range:  14,
+    mean:  30,
+    median:  29,
+    mode:  (26, 5),
+    variance:  17.5,
+    'standard deviation':  4.2,
+    'frequency distribution': [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34), (8.0, 33), (8.0, 31), (8.0, 24), (4.0, 38), (4.0, 29), (4.0, 25)],
+    describe: function(){
+      this.count=count;
+      this.sum=sum;
+      this.min=min;
+      this.max=max;
+      this.range=range;
+      this.mean=mean;
+      this.median=median;
+      this.mode=mode;
+      this.variance=this.variance;
+    }
+  }
+]
+const stand = statistic.some(val => val.describe)
+
+console.log(stand);
