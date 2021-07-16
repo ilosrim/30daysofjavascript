@@ -125,8 +125,9 @@ console.log(sentence.replace(/[^a-zA-Z 0-9.]/g,""))
 
 // 4
 let price = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
-let sum = price.match(/\d+/g).map(i=>Number(i)).reduce((a, b) => a + b, 0)
-console.log(sum)
+let sum = price.match(/\d+/g).map(i=>Number(i)).reduce((a, b) => a += b, 0)
+let yearMonth = sum*12-110000
+console.log(yearMonth)
 
 // console.log(price.match(/(he|from|month)/gi))
 
