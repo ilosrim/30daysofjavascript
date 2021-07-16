@@ -77,12 +77,10 @@ const users = {
   }
 }
 
-// for(const i in users){
-//     const k = users[i]
-//     for(const j in k){
-//         console.log(k[j])
-//     }
-// }
+const bla = Object.values(users)
+let blabla = bla.map(val=>{
+    // val.points>=50 && console.log(val);
+})
 
 
 // const user = {

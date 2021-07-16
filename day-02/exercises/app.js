@@ -89,6 +89,7 @@ console.log(parseInt('9.8'))
 console.log(Math.random()*100)
 
 // 8
+console.log(Math.round(Math.random() * 50) + 50)
 let randomNumber = Math.random();
 let randomBtn50 = randomNumber * 50;
 let randomBtn100 = randomNumber * 100;
