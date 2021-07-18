@@ -109,3 +109,94 @@ const getPersonInfo = obj => {
 }
 
 console.log(getPersonInfo(person))
+
+const todoList = [
+{
+  task:'Prepare JS Test',
+  time:'4/1/2020 8:30',
+  completed:true
+},
+{
+  task:'Give JS Test',
+  time:'4/1/2020 10:00',
+  completed:false
+},
+{
+  task:'Assess Test Result',
+  time:'4/1/2020 1:00',
+  completed:false
+}
+]
+
+for (const {task, time, completed} of todoList){
+  console.log(task, time, completed)
+}
+
+
+// Spread or Rest Operator
+// const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// let [num1, num2, num3, ...rest] = num
+// ​
+// console.log(num1, num2, num3)
+// console.log(rest)
+const countries = [
+  'Germany',
+  'France',
+  'Belgium',
+  'Finland',
+  'Sweden',
+  'Norway',
+  'Denmark',
+  'Iceland'
+]
+
+let [gem, fra, , ...nordicCountries] = countries
+
+console.log(gem)
+console.log(fra)
+console.log(nordicCountries)
+
+// Spread operator to copy array
+const evens = [0, 2, 4, 6, 8, 10]
+const evenNumbers = [...evens]
+
+const odds = [1, 3, 5, 7, 9]
+const oddNumbers = [...odds]
+
+const wholeNumbers = [...evens, ...odds]
+
+console.log(evenNumbers)
+console.log(oddNumbers)
+console.log(wholeNumbers)
+
+// Spread operator to copy object
+const user = {
+  name:'Asabeneh',
+  title:'Programmer',
+  country:'Finland',
+  city:'Helsinki'
+}
+
+const copiedUser = {...user, title:'developer'}
+console.log(copiedUser)
+// {name: "Asabeneh", title: "developer", country: "Finland", city: "Helsinki"}
+
+// Spread operator with arrow function
+
+const sumAllNums = (...args) => {
+  console.log(args)
+}
+sumAllNums(1,2,3,4,5) //[1, 2, 3, 4, 5]
+
+
+const sumAllNums = (...args) => {
+  let sum = 0
+  for (const num of args){
+    sum += num
+  }
+  return sum
+  // let sum = args.reduce((a,b)=>a+=b,0)
+  // return sum
+  
+}
+console.log(sumAllNums(1, 2, 3,4,5))
