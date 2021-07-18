@@ -1,9 +1,10 @@
 // Ixtiyoriy so'zni ichida nechta unli harf borligi aniqlansin.
 // Bunda so'z o'zbek lotin alifbosida ekanligi hisobga olinsin.
 
-// let arr = [`a`,`e`,`i`,`u`,`o'`,`o`];
-// const tekshir = gapArr.map(val=>console.log(val))
-// console.log(gapArr.forEach(val=>console.log(val)));
+let arr = [`a`,`e`,`i`,`u`,`o'`,`o`];
+const tekshir = gapArr.map(val=>console.log(val))
+console.log(gapArr.forEach(val=>console.log(val)));
+
 let gap = 'Assalomu alaykum';
 // 1-usul
 let unlilarSoni = gap.match(/[`a`|`e`|`i`|`u`|`o`|`o'`|`u`]/gi).length
