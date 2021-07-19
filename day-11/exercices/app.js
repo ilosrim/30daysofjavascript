@@ -66,3 +66,6 @@ console.log(width, height, area, perimeter);
 for (const i in rectangle){
     console.log(i)
 }
+var a = 5, b = 4;
+[a, b] = 4, 5;
+console.log(a, b);
