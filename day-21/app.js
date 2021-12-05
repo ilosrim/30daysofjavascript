@@ -1,1 +1,3 @@
-console.log('Hello World')
+let element = document.getElementsByClassName('title');
+
+console.log(element.length);
