@@ -2,7 +2,6 @@
 // input 5 ga bo'linsa Bazz
 // input 3 va 5 ga bo'linsa FizzBazz
 // input 3 va 5 ga bo'linmasa return input
-// input son bo'lmasa, return 'Son emas!
 
 let input = 15;
 
